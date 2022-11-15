@@ -1,6 +1,6 @@
 <script>
 
-    import Window from "$lib/components/Window.svelte";
+    // import Window from "$lib/components/Window.svelte";
 </script>
 
 
@@ -8,4 +8,4 @@
 <p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-<Window source={'testimg.jpg'} storytitle={'Storytitle'}/>
+<!-- <Window source={'testimg.jpg'} storytitle={'Storytitle'}/> -->
