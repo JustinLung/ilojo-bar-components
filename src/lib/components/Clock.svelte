@@ -6,7 +6,7 @@
     <div class="minutes"></div>
   </div>
   <div class="seconds-container">
-    <div class="seconds"></div>
+   <div class="seconds"></div>
   </div>
 </article>
 
