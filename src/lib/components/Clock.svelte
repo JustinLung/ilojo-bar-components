@@ -70,23 +70,26 @@
 
 	.minute-lines {
 		stroke: #000;
-		stroke-width: 0.5;
+		stroke-width: 1;
 	}
 
 	.hour-lines {
 		stroke: #000;
-		stroke-width: 1;
+		stroke-width: 1.5;
 	}
 
 	.hour {
 		stroke: #000;
+		stroke-width: 1.5;
 	}
 
 	.minute {
 		stroke: #000;
+		stroke-width: 1.5;
 	}
 
 	.second {
 		stroke: red;
+		stroke-width: 1.5;
 	}
 </style>
