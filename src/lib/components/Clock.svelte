@@ -1,4 +1,4 @@
-<script>
+<script type="ts">
 	import { onMount } from 'svelte';
 
 	let time = new Date();
@@ -11,7 +11,7 @@
 		const interval = setInterval(() => {
 			time = new Date();
 		}, 1000);
-
+    
 		return () => {
 			clearInterval(interval);
 		};
