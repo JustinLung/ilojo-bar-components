@@ -19,7 +19,7 @@
 </script>
 
 <svg viewBox='-50 -50 100 100'>
-	<circle class='clock-face' r='48'/>
+	<circle class='clock-circle' r='48'/>
 	{#each [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55] as minute}
 		<line
 			class='hour-lines'
@@ -63,7 +63,7 @@
 		height: 10em;
 	}
 
-	.clock-face {
+	.clock-circle {
 		stroke: #000;
 		fill: #fff;
 	}
