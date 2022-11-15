@@ -1,76 +1,92 @@
-<article class="clock">
-  <div class="hours-container">
-    <div class="hours"></div>
-  </div>
-  <div class="minutes-container">
-    <div class="minutes"></div>
-  </div>
-  <div class="seconds-container">
-   <div class="seconds"></div>
-  </div>
-</article>
+<script>
+	import { onMount } from 'svelte';
+
+	let time = new Date();
+
+	$: hours = time.getHours();
+	$: minutes = time.getMinutes();
+	$: seconds = time.getSeconds();
+
+	onMount(() => {
+		const interval = setInterval(() => {
+			time = new Date();
+		}, 1000);
+
+		return () => {
+			clearInterval(interval);
+		};
+	});
+</script>
+
+<svg viewBox='-50 -50 100 100'>
+	<circle class='clock-face' r='48'/>
+	{#each [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55] as minute}
+		<line
+			class='hour-lines'
+			y1='35'
+			y2='45'
+			transform='rotate({30 * minute})'
+		/>
+
+		{#each [1, 2, 3, 4] as offset}
+			<line
+				class='minute-lines'
+				y1='42'
+				y2='45'
+				transform='rotate({6 * (minute + offset)})'
+			/>
+		{/each}
+	{/each}
+
+	<line
+		class='hour'
+		y1='2'
+		y2='-20'
+		transform='rotate({30 * hours + minutes / 2})'
+	/>
+
+	<line
+		class='minute'
+		y1='4'
+		y2='-30'
+		transform='rotate({6 * minutes + seconds / 10})'
+	/>
+
+	<g transform='rotate({6 * seconds})'>
+		<line class='second' y1='10' y2='-38'/>
+	</g>
+</svg>
 
 <style>
-    .clock {
-      background: #fff url(/clock.svg) no-repeat center;
-      height: 10em;
-      position: relative;
-      width: 10em;
-    }
+	svg {
+		width: 10em;
+		height: 10em;
+	}
 
-    .hours {
-      background: #000;
-      height: 20%;
-      left: 48.75%;
-      position: absolute;
-      top: 30%;
-      transform-origin: 50% 100%;
-      width: 2.5%;
-    }
+	.clock-face {
+		stroke: #000;
+		fill: #fff;
+	}
 
-  .minutes {
-    background: #000;
-    height: 40%;
-    left: 49%;
-    position: absolute;
-    top: 10%;
-    transform-origin: 50% 100%;
-    width: 2%;
-  }
+	.minute-lines {
+		stroke: #000;
+		stroke-width: 0.5;
+	}
 
-  .seconds {
-    background: red;
-    height: 45%;
-    left: 49.5%;
-    position: absolute;
-    top: 14%;
-    transform-origin: 50% 80%;
-    width: 1%;
-  }
+	.hour-lines {
+		stroke: #000;
+		stroke-width: 1;
+	}
 
-  .hours-container {
-    position:absolute;
-    width:100%;
-    height:100%;
-    animation: rotate 43200s infinite steps(60);
-  }
+	.hour {
+		stroke: #000;
+	}
 
-  .minutes-container {
-    position: absolute;
-    width:100%;
-    height:100%;
-    animation: rotate 3600s infinite steps(60);
-  }
+	.minute {
+		stroke: #000;
+	}
 
-  .seconds-container {
-      width:100%;
-      height:100%;
-      animation: rotate 60s infinite steps(60);
-  }
-
-  @keyframes rotate {
-    100% {
-      transform: rotateZ(360deg);
-    }
-  }
+	.second {
+		stroke: red;
+	}
 </style>
