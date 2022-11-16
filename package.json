@@ -1,6 +1,6 @@
 {
 	"name": "ilojo-bar-components",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"description": "Ilojo Bar Component Library",
 	"scripts": {
 		"dev": "vite dev",
@@ -11,6 +11,13 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
+	"keywords": [
+		"Sveltekit",
+		"Component Library",
+		"CSS",
+		"Typescript",
+		"HTML"
+	],
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
