@@ -1,15 +1,15 @@
 <script type="ts">
 
-    export let link:string;
-    export let linktext:string;
+    export let storyLink :string;
+    export let storyLinkText:string;
     export let height:string;
-	export let source:string;
+	export let storyPlateImage :string;
 	export let color:string;
 </script>
 
  <div class="container">
-    <img src={source} alt="goldplate2" style="height: {height};" />
-    <div class="centered"><a href="/{link}" style="color: {color};" >{linktext}</a></div>
+    <img src={storyPlateImage } alt="storyPlateImage" style="height: {height};" />
+    <div class="centered"><a href="/{storyLink }" style="color: {color};" >{storyLinkText}</a></div>
 </div>
 
 
