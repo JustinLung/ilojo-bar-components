@@ -8,5 +8,6 @@ import ScrollToTopButton from '$lib/components/ScrollToTopButton.svelte'
 import StoryPlateBtn from '$lib/components/StoryPlateBtn.svelte'
 import Window from '$lib/components/Window.svelte'
 import WindowSection from '$lib/components/WindowSection.svelte'
+import styles from '$lib/styles/global.css';
 
-export { Clock, Footer, Header, Link, Plate, ScrollToTopButton, StoryPlateBtn, Window, WindowSection }
+export { Clock, Footer, Header, Link, Plate, ScrollToTopButton, StoryPlateBtn, Window, WindowSection, styles }
