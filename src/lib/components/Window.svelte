@@ -1,11 +1,12 @@
 <script lang="ts">
-	export let source: string;
-	export let storytitle: string;
+	export let storyImage : string;
+	export let storyTitle: string;
+	export let altTag: string;
 </script>
 
 <section>
 	<div class="image-container">
-		<img class="storyimage" src={source} alt="storyimage" />
+		<img class="storyimage" src={storyImage } alt={altTag} />
 	</div>
 
 	<div class="window">
@@ -15,9 +16,8 @@
 		<div class="test" />
 	</div>
 
-	<h2>{storytitle}</h2>
+	<h2>{storyTitle}</h2>
 
-	<!-- <Button source={"goldplate.png"} link={data.uid} linktext={'Discover'} height={'4rem'} color={("#6c5334")} /> -->
 </section>
 
 <style>
@@ -37,7 +37,6 @@
 
 	.storyimage {
 		width: 100%;
-		/* height: 100%; */
         height: 240px;
 		cursor: pointer;
 		object-fit: cover;
@@ -89,7 +88,6 @@
 	@media (max-width: 40em) {
 		h2 {
 			font-size: 16px;
-			/* width: 22rem; */
 		}
 
 		.window {
