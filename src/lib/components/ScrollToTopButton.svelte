@@ -1,14 +1,13 @@
 <script type="ts">
-	export let uid: string;
+	export let buttonLink: string;
 </script>
 
 <div>
-	<a href={uid}> <div class="btn"><img src="/Arrow.svg" alt="button" /></div></a>
+	<a href={buttonLink}> <div class="btn"><img src="/Arrow.svg" alt="button" /></div></a>
 </div>
 
 <style>
 	.btn {
-		/* background-color: var(--redLight); */
         background-color:  #da2a2a;
 		width: 5em;
 		height: 5em;
