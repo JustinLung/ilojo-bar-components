@@ -38,12 +38,9 @@
 		{/each}
 	{/each}
 
-	<line
-		class='hour'
-		y1='2'
-		y2='-20'
-		transform='rotate({30 * hours + minutes / 2})'
-	/>
+	<g transform='rotate({6 * seconds})'>
+		<line class='second' y1='10' y2='-38'/>
+	</g>
 
 	<line
 		class='minute'
@@ -52,9 +49,12 @@
 		transform='rotate({6 * minutes + seconds / 10})'
 	/>
 
-	<g transform='rotate({6 * seconds})'>
-		<line class='second' y1='10' y2='-38'/>
-	</g>
+	<line
+		class='hour'
+		y1='2'
+		y2='-20'
+		transform='rotate({30 * hours + minutes / 2})'
+	/>
 </svg>
 
 <style>
@@ -89,7 +89,7 @@
 	}
 
 	.second {
-		stroke: red;
+		stroke: #8c0500;
 		stroke-width: 1.5;
 	}
 </style>
