@@ -1,11 +1,9 @@
 <section>
-    <slot/>
+	<slot />
 </section>
 
-
 <style>
-
-section {
+	section {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -14,6 +12,5 @@ section {
 		margin: 4rem 6rem;
 		gap: 6rem;
 		position: relative;
-      
 	}
 </style>
