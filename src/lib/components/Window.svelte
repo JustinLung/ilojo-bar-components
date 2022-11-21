@@ -1,23 +1,22 @@
 <script lang="ts">
-	export let storyImage : string;
+	export let storyImage: string;
 	export let storyTitle: string;
 	export let altTag: string;
 </script>
 
 <section>
 	<div class="image-container">
-		<img class="storyimage" src={storyImage } alt={altTag} />
+		<img class="storyimage" src={storyImage} alt={altTag} />
 	</div>
 
 	<div class="window">
-		<img class="window" src="window.svg" alt="window" />
-		<img class="windowLeft" src="windowLeft.svg" alt="window" />
-		<img class="windowRight" src="windowRight.svg" alt="window" />
+		<img class="window" src="/assets/images/window.svg" alt="window" />
+		<img class="windowLeft" src="/assets/images/windowLeft.svg" alt="window" />
+		<img class="windowRight" src="/assets/images/windowRight.svg" alt="window" />
 		<div class="test" />
 	</div>
 
 	<h2>{storyTitle}</h2>
-
 </section>
 
 <style>
@@ -32,12 +31,11 @@
 		position: absolute;
 		width: 205px;
 		height: 228px;
-        
 	}
 
 	.storyimage {
 		width: 100%;
-        height: 240px;
+		height: 240px;
 		cursor: pointer;
 		object-fit: cover;
 	}
@@ -114,8 +112,8 @@
 			margin-bottom: 10px;
 		}
 
-        .storyimage{
-            height: 210px;
-        }
+		.storyimage {
+			height: 210px;
+		}
 	}
 </style>
