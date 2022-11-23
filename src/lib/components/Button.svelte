@@ -5,6 +5,7 @@
 <style>
 	button {
 		all: unset;
+		cursor: pointer;
 		background-color: #8c0500;
 		border: 1px solid #8c0500;
 		color: #ffff;
