@@ -13,7 +13,7 @@
 		<h2>{cardTitle}</h2>
 		<p>{cardDescription}</p>
 		<div>
-			<Button />
+			<Button>Read More</Button>
 		</div>
 	</div>
 </article>
