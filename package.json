@@ -1,6 +1,6 @@
 {
 	"name": "ilojo-bar-components",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Ilojo Bar Component Library",
 	"scripts": {
 		"dev": "vite dev",
