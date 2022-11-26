@@ -54,4 +54,10 @@
 		width: 100%;
 		border-radius: 0.5rem;
 	}
+
+	@media (max-width: 55rem) {
+		.card {
+			width: 100%;
+		}
+	}
 </style>
