@@ -4,18 +4,14 @@
 	import Tag from './Tag.svelte';
 	import TagContainer from './TagContainer.svelte';
 	import Button from './Button.svelte';
-	export let cardTitle: string = 'Title';
-	export let cardDescription: string = 'Description';
-	export let cardImage: string = 'https://placeimg.com/400/225/arch';
 </script>
 
 <article class="card">
-	<CardHeader>
-		<img src={cardImage} alt={cardTitle} />
-	</CardHeader>
-	<CardBody>
-		<h2>{cardTitle}</h2>
-		<p>{cardDescription}</p>
+	<CardHeader cardTitle="Ilojo Bar Story" />
+	<CardBody
+		cardTitle="Ilojo Bar Story"
+		cardDescription="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, mollitia."
+	>
 		<TagContainer>
 			<Tag>Story</Tag>
 			<Tag>Dark</Tag>
@@ -43,18 +39,6 @@
 		height: 100%;
 		border-radius: 0.5rem;
 	}
-
-	h2,
-	p {
-		margin: 0;
-		padding: 0;
-	}
-
-	img {
-		width: 100%;
-		border-radius: 0.5rem;
-	}
-
 	@media (max-width: 55rem) {
 		.card {
 			width: 100%;
