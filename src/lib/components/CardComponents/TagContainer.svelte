@@ -9,7 +9,6 @@
 	div {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
 		align-items: center;
 		padding-bottom: 0.5rem;
 	}
