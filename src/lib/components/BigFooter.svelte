@@ -17,7 +17,7 @@
 		<p>&#169; {new Date().getFullYear()} {companyName}</p>
 	</section>
 	
-	<section class="footer-links">
+	<section class="footer-links-pages">
 		<h2 class="footer-links__header">Menu</h2>
 		<FooterLink link="/" linkTitle="Home" />
 		<FooterLink link="/" linkTitle="Discover stories" />
@@ -43,47 +43,18 @@
 </footer>
 
 <style>
-	@font-face {
-    font-family: 'Austral-Sans_Stamp-Regular';
-    font-display: swap;
-    src: url('/assets/fonts/AustralSansStamp-Regular.woff2') format('woff2'),
-        url('/assets/fonts/AustralSansStamp-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Black-Ground';
-    font-display: swap;
-    src: url('/assets/fonts/Black-Ground.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-	:global(body) {
-    padding: 0;
-    margin: 0;
-		font-family: 'Austral-Sans_Stamp-Regular';
-	}
-
-	h2,
-	p {
-			padding: 0;
-			margin: 0;
-	}
-
 	footer {
 		padding: 3em;
 		color: #fff;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		gap: 2em;
+		text-align: center;
+		gap: 0;
 		background-color: #8c0500;
 	}
 
 	.footer-copyright {
-		margin-right: 1em;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -91,11 +62,27 @@
 	}
 
 	.footer-links {
-		display: flex;
-		flex-direction: column;
+		display: none;
 	}
 
 	.footer-links__header {
 		margin-bottom: .25em;
+	}
+
+	@media (min-width: 70em) {
+		footer {
+			text-align: left;
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+			gap: 2em;
+		}
+
+		.footer-links-pages,
+		.footer-links {
+			display: flex;
+			flex-direction: column;
+			align-items: baseline;
+		}
 	}
 </style>
