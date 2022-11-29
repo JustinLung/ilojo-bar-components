@@ -1,6 +1,6 @@
-<script lang='ts'>
-	export let inputName:string;
-	export let placeholder:string;
+<script lang="ts">
+	export let inputName: string;
+	export let placeholder: string;
 </script>
 
 <input type="text" id={inputName} {placeholder} required />
@@ -12,6 +12,4 @@
 		border: none;
 		font-size: 0.8rem;
 	}
-
-
 </style>

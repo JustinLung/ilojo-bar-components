@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	export let btnText: string;
 </script>
 
@@ -11,8 +11,8 @@
 		color: #ffffff;
 		width: 81%;
 		border: none;
-        margin: 1rem 0;
-        font-weight: bold;
+		margin: 1rem 0;
+		font-weight: bold;
 	}
 	button:hover {
 		background-color: #ffffff;

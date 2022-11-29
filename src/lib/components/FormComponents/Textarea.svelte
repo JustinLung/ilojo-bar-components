@@ -1,5 +1,5 @@
-<script lang='ts'>
-	export let placeholder:string;
+<script lang="ts">
+	export let placeholder: string;
 </script>
 
 <textarea name="content" id="content" cols="30" rows="10" {placeholder} required />
@@ -10,6 +10,6 @@
 		max-width: 80%;
 		min-height: 200px;
 		max-height: 300px;
-        border: none;
+		border: none;
 	}
 </style>

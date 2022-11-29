@@ -19,8 +19,7 @@
 		gap: 0.2rem;
 		background-color: #8c0500;
 		margin-right: 2rem;
-        border-radius: 20px;
-      
+		border-radius: 20px;
 	}
 	section {
 		display: inline-flex;

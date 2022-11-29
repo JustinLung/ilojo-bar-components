@@ -1,6 +1,6 @@
-<script lang='ts'>
-	export let labelName:string;
-	export let labelText:string;
+<script lang="ts">
+	export let labelName: string;
+	export let labelText: string;
 </script>
 
 <label for={labelName}>{labelText}</label>
