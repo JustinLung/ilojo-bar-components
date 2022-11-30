@@ -3,7 +3,7 @@
 	import CardHeader from './CardHeader.svelte';
 	import Tag from './Tag.svelte';
 	import TagContainer from './TagContainer.svelte';
-	import Button from './Button.svelte';
+	import CardButton from './CardButton.svelte';
 </script>
 
 <article class="card">
@@ -16,7 +16,7 @@
 			<Tag>Story</Tag>
 			<Tag>Dark</Tag>
 		</TagContainer>
-		<Button>Read More</Button>
+		<CardButton>Read More</CardButton>
 	</CardBody>
 </article>
 
