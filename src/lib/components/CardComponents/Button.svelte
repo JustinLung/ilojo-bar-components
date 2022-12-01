@@ -13,6 +13,8 @@
 		border-radius: 0.3rem;
 		padding: 0.5rem 1.5rem;
 		transition: 0.3s ease;
+		width: 100%;
+		max-width: 10rem;
 	}
 
 	button:hover {
