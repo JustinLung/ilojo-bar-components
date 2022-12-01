@@ -64,32 +64,32 @@
 	}
 
 	.clock-circle {
-		stroke: #000;
+		stroke: var(--color-black);
 		fill: #fff;
 	}
 
 	.minute-lines {
-		stroke: #000;
+		stroke: var(--color-black);
 		stroke-width: 1;
 	}
 
 	.hour-lines {
-		stroke: #000;
+		stroke: var(--color-black);
 		stroke-width: 1.5;
 	}
 
 	.hour {
-		stroke: #000;
+		stroke: var(--color-black);
 		stroke-width: 1.5;
 	}
 
 	.minute {
-		stroke: #000;
+		stroke: var(--color-black);
 		stroke-width: 1.5;
 	}
 
 	.second {
-		stroke: #8c0500;
+		stroke: var(--color-red);
 		stroke-width: 1.5;
 	}
 </style>

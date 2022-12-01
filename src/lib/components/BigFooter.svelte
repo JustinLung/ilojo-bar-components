@@ -45,13 +45,13 @@
 <style>
 	footer {
 		padding: 3em;
-		color: #fff;
+		color: var(--color-white);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
 		gap: 0;
-		background-color: #8c0500;
+		background-color: var(--color-black);
 	}
 
 	.footer-copyright {
