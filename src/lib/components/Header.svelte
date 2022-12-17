@@ -52,7 +52,7 @@
 		height: 100vh;
 		background-color: var(--color-black);
 		overflow: hidden;
-		z-index: 20;
+		z-index: 50;
 	}
 
 	.header__link__image {
