@@ -205,6 +205,7 @@
 	.window {
 		position: relative;
 		cursor: pointer;
+		z-index: -1;
 	}
 
 	.window:hover .windowLeft {
